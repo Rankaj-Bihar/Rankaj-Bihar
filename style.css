@@ -1,0 +1,164 @@
+* {
+        box-sizing: border-box;
+            margin: 0;
+                padding: 0;
+                }
+
+                body {
+                    font-family: Arial, sans-serif;
+                        background: #222;
+                            color: #fff;
+                                display: flex;
+                                    flex-direction: column;
+                                        min-height: 100vh;
+                                        }
+
+                                        .container {
+                                            display: flex;
+                                                flex: 1;
+                                                    width: 100%;
+                                                    }
+
+                                                    .sidebar {
+                                                        width: 250px;
+                                                            background: black;
+                                                                padding: 20px;
+                                                                    box-shadow: 2px 0 10px rgba(255, 255, 255, 0.2);
+                                                                    }
+
+                                                                    .sidebar h2 {
+                                                                        text-align: center;
+                                                                        }
+
+                                                                        .sidebar ul {
+                                                                            list-style: none;
+                                                                                padding: 0;
+                                                                                }
+
+                                                                                .sidebar ul li {
+                                                                                    margin: 10px 0;
+                                                                                    }
+
+                                                                                    .sidebar ul li button {
+                                                                                        width: 100%;
+                                                                                            padding: 10px;
+                                                                                                background: #444;
+                                                                                                    color: #fff;
+                                                                                                        border: none;
+                                                                                                            cursor: pointer;
+                                                                                                                transition: 0.3s;
+                                                                                                                }
+
+                                                                                                                .sidebar ul li button:hover {
+                                                                                                                    background: #666;
+                                                                                                                    }
+
+                                                                                                                    .content {
+                                                                                                                        flex: 1;
+                                                                                                                            padding: 30px;
+                                                                                                                                max-width: 100%;
+                                                                                                                                    min-height: 100vh;
+                                                                                                                                    }
+
+                                                                                                                                    .search-section {
+                                                                                                                                        background: rgba(255, 255, 255, 0.1);
+                                                                                                                                            padding: 20px;
+                                                                                                                                                border-radius: 10px;
+                                                                                                                                                    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+                                                                                                                                                        max-width: 600px;
+                                                                                                                                                            margin: 0 auto;
+                                                                                                                                                            }
+
+                                                                                                                                                            .search-section h2 {
+                                                                                                                                                                text-align: center;
+                                                                                                                                                                }
+
+                                                                                                                                                                input {
+                                                                                                                                                                    width: 100%;
+                                                                                                                                                                        padding: 10px;
+                                                                                                                                                                            margin: 10px 0;
+                                                                                                                                                                                border: none;
+                                                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                                                        background: #333;
+                                                                                                                                                                                            color: #fff;
+                                                                                                                                                                                            }
+
+                                                                                                                                                                                            button {
+                                                                                                                                                                                                padding: 10px;
+                                                                                                                                                                                                    background: #fff;
+                                                                                                                                                                                                        color: black;
+                                                                                                                                                                                                            border: none;
+                                                                                                                                                                                                                cursor: pointer;
+                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                        transition: 0.3s;
+                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                        button:hover {
+                                                                                                                                                                                                                            background: #ddd;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            footer {
+                                                                                                                                                                                                                                text-align: center;
+                                                                                                                                                                                                                                    padding: 10px;
+                                                                                                                                                                                                                                        background: black;
+                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                position: relative;
+                                                                                                                                                                                                                                                    bottom: 0;
+                                                                                                                                                                                                                                                        width: 100%;
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        /* Media Queries for Responsiveness */
+                                                                                                                                                                                                                                                        @media (max-width: 768px) {
+                                                                                                                                                                                                                                                            .container {
+                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                            .sidebar {
+                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                            padding: 10px;
+                                                                                                                                                                                                                                                                                                    text-align: center;
+                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                            .sidebar ul {
+                                                                                                                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                                                                                                                            flex-wrap: wrap;
+                                                                                                                                                                                                                                                                                                                                    justify-content: center;
+                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                            .sidebar ul li {
+                                                                                                                                                                                                                                                                                                                                                    margin: 5px;
+                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                            .sidebar ul li button {
+                                                                                                                                                                                                                                                                                                                                                                    width: auto;
+                                                                                                                                                                                                                                                                                                                                                                            padding: 8px 15px;
+                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                    .content {
+                                                                                                                                                                                                                                                                                                                                                                                            padding: 20px;
+                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                    .search-section {
+                                                                                                                                                                                                                                                                                                                                                                                                            width: 90%;
+                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                @media (max-width: 480px) {
+                                                                                                                                                                                                                                                                                                                                                                                                                    .search-section {
+                                                                                                                                                                                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                    padding: 15px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                            input, button {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    padding: 8px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            .sidebar ul {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .sidebar ul li button {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+}
